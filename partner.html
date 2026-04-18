@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covenant Capital | Partner Program</title>
+  <meta name="description" content="Launch your own funding company with Covenant Capital's done-for-you partner program, complete fulfillment, training, and support." />
+  <meta name="theme-color" content="#0a1628" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#0a1628',
+            card: '#0f1d32',
+            'card-hover': '#162544',
+            secondary: 'rgba(201, 168, 76, 0.05)',
+            gold: '#c9a84c',
+            'gold-light': '#d4b65a',
+            'gold-dark': '#a08530',
+            navy: '#0a1628',
+            'navy-light': '#162544'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          },
+          boxShadow: {
+            gold: '0 4px 30px rgba(201, 168, 76, 0.25)',
+            elegant: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+            card: '0 10px 40px -10px rgba(0, 0, 0, 0.6)'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(201, 168, 76, 0.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(201, 168, 76, 0.06), transparent 26%),
+        linear-gradient(180deg, #0a1628 0%, #0c1930 35%, #091424 100%);
+      color: #f0ece2;
+    }
+
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #c9a84c 0%, #d4b65a 50%, #a08530 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .bg-gradient-gold {
+      background: linear-gradient(135deg, #c9a84c 0%, #d4b65a 50%, #a08530 100%);
+    }
+
+    .glass-nav {
+      backdrop-filter: blur(24px);
+      background: rgba(10, 22, 40, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .luxury-border {
+      border: 1px solid rgba(201, 168, 76, 0.15);
+    }
+
+    .card-lift {
+      transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+    }
+
+    .card-lift:hover,
+    .card-lift:focus-within {
+      transform: translateY(-8px);
+      border-color: rgba(212, 182, 90, 0.35);
+      box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(212, 182, 90, 0.08);
+      background: #162544;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-badge {
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      background: rgba(201, 168, 76, 0.08);
+      color: #d4b65a;
+    }
+
+    details[open] summary {
+      color: #f0ece2;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold/20 selection:text-white">
+  <nav class="glass-nav fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="index.html#home" class="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 rounded-full">
+        <img src="logo-transparent.png" alt="Covenant Capital" class="h-12 w-auto" />
+      </a>
+
+      <div class="hidden items-center gap-8 lg:flex">
+        <a href="index.html#home" class="text-sm text-[#f0ece2] transition hover:text-gold-light">Home</a>
+        <div class="group relative">
+          <button type="button" class="flex items-center gap-2 text-sm text-[#f0ece2] transition hover:text-gold-light focus:outline-none">
+            Funding Products
+            <i data-lucide="chevron-down" class="h-4 w-4"></i>
+          </button>
+          <div class="pointer-events-none absolute left-1/2 top-full mt-4 w-72 -translate-x-1/2 rounded-2xl border border-white/5 bg-card p-3 opacity-0 shadow-card transition duration-300 group-hover:pointer-events-auto group-hover:opacity-100">
+            <div class="grid gap-2">
+              <a href="index.html#products" class="rounded-xl px-3 py-2 text-sm text-[#f0ece2] hover:bg-white/5">Business Line of Credit</a>
+              <a href="index.html#products" class="rounded-xl px-3 py-2 text-sm text-[#f0ece2] hover:bg-white/5">0% Strategic Financing</a>
+              <a href="index.html#products" class="rounded-xl px-3 py-2 text-sm text-[#f0ece2] hover:bg-white/5">SBA Loans</a>
+              <a href="index.html#products" class="rounded-xl px-3 py-2 text-sm text-[#f0ece2] hover:bg-white/5">Revenue-Based Financing</a>
+              <a href="index.html#products" class="rounded-xl px-3 py-2 text-sm text-[#f0ece2] hover:bg-white/5">Equipment Financing</a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#industries" class="text-sm text-[#f0ece2] transition hover:text-gold-light">Industries</a>
+        <a href="index.html#partners" class="text-sm text-[#f0ece2] transition hover:text-gold-light">Partners</a>
+        <a href="index.html#success-stories" class="text-sm text-[#f0ece2] transition hover:text-gold-light">Success Stories</a>
+      </div>
+
+      <div class="hidden items-center gap-3 lg:flex">
+        <a href="#checkout-section" class="rounded-full border border-gold/30 px-5 py-3 text-sm font-semibold text-[#f0ece2] transition hover:border-gold hover:bg-gold/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/60">Become a Partner</a>
+        <a href="index.html#apply" class="rounded-full bg-gradient-gold px-5 py-3 text-sm font-semibold text-navy shadow-gold transition hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/60">Apply Now</a>
+      </div>
+
+      <button id="menu-toggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-[#f0ece2] lg:hidden" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-white/5 bg-[#0a1628]/95 lg:hidden">
+      <div class="space-y-2 px-4 py-4 sm:px-6">
+        <a href="index.html#home" class="block rounded-xl px-4 py-3 text-sm text-[#f0ece2] hover:bg-white/5">Home</a>
+        <a href="index.html#products" class="block rounded-xl px-4 py-3 text-sm text-[#f0ece2] hover:bg-white/5">Funding Products</a>
+        <a href="index.html#industries" class="block rounded-xl px-4 py-3 text-sm text-[#f0ece2] hover:bg-white/5">Industries</a>
+        <a href="index.html#partners" class="block rounded-xl px-4 py-3 text-sm text-[#f0ece2] hover:bg-white/5">Partners</a>
+        <a href="index.html#success-stories" class="block rounded-xl px-4 py-3 text-sm text-[#f0ece2] hover:bg-white/5">Success Stories</a>
+        <div class="grid gap-3 pt-3 sm:grid-cols-2">
+          <a href="#checkout-section" class="rounded-full border border-gold/30 px-5 py-3 text-center text-sm font-semibold text-[#f0ece2]">Become a Partner</a>
+          <a href="index.html#apply" class="rounded-full bg-gradient-gold px-5 py-3 text-center text-sm font-semibold text-navy shadow-gold">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="relative overflow-hidden pt-28 reveal">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute inset-x-0 top-0 h-80 bg-gradient-to-b from-gold/10 via-gold/5 to-transparent"></div>
+        <div class="absolute left-[8%] top-24 h-56 w-56 rounded-full bg-gold/10 blur-3xl"></div>
+        <div class="absolute right-[10%] top-16 h-64 w-64 rounded-full bg-gold/10 blur-3xl"></div>
+        <div class="absolute bottom-12 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-gold/5 blur-3xl"></div>
+      </div>
+      <div class="mx-auto max-w-7xl px-4 pb-20 pt-10 sm:px-6 lg:px-8 lg:pb-28 lg:pt-16">
+        <div class="mx-auto max-w-5xl text-center">
+          <div class="section-badge mx-auto inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em]">
+            <i data-lucide="star" class="h-4 w-4"></i>
+            Limited Partner Spots Available
+          </div>
+          <h1 class="mt-8 font-display text-5xl font-bold leading-tight text-[#f0ece2] sm:text-6xl lg:text-7xl">
+            The <span class="text-gradient-gold">Done-For-You</span>
+            <span class="block">Funding System</span>
+          </h1>
+          <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#a8b6cb] sm:text-xl">
+            Start your own credit repair &amp; funding company with 100% fulfillment done for you. Skip the trial &amp; error, use our exact marketing to bring in clients.
+          </p>
+          <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <a href="#checkout-section" class="rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-navy shadow-gold transition hover:scale-[1.02]">Become a Partner</a>
+          </div>
+          <p class="mt-4 text-sm text-[#7a8ba5]">Pay with Card, Affirm, Klarna, or Afterpay</p>
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-[#d6dde8]">
+            <span class="rounded-full border border-gold/20 bg-secondary px-4 py-2">Instant Access</span>
+            <span class="rounded-full border border-gold/20 bg-secondary px-4 py-2">100% Done For You</span>
+            <span class="rounded-full border border-gold/20 bg-secondary px-4 py-2">Proven System</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div class="section-badge inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em]">Partner Benefits</div>
+          <h2 class="mt-6 font-display text-4xl font-bold sm:text-5xl">Why Partners Love This <span class="text-gradient-gold">System</span></h2>
+        </div>
+        <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="card-lift luxury-border rounded-[2rem] bg-card p-7 shadow-card reveal"><i data-lucide="target" class="h-8 w-8 text-gold"></i><h3 class="mt-5 text-2xl font-semibold">Done-For-You Marketing</h3><p class="mt-3 text-[#a8b6cb]">Use our proven marketing materials and scripts to bring in clients effortlessly.</p></article>
+          <article class="card-lift luxury-border rounded-[2rem] bg-card p-7 shadow-card reveal"><i data-lucide="users" class="h-8 w-8 text-gold"></i><h3 class="mt-5 text-2xl font-semibold">100% Fulfillment</h3><p class="mt-3 text-[#a8b6cb]">We handle all the credit repair and funding work. You focus on sales.</p></article>
+          <article class="card-lift luxury-border rounded-[2rem] bg-card p-7 shadow-card reveal"><i data-lucide="trending-up" class="h-8 w-8 text-gold"></i><h3 class="mt-5 text-2xl font-semibold">High-Ticket Commissions</h3><p class="mt-3 text-[#a8b6cb]">Earn substantial commissions on every client you refer to us.</p></article>
+          <article class="card-lift luxury-border rounded-[2rem] bg-card p-7 shadow-card reveal"><i data-lucide="headphones" class="h-8 w-8 text-gold"></i><h3 class="mt-5 text-2xl font-semibold">Dedicated Support</h3><p class="mt-3 text-[#a8b6cb]">Get personalized support from our team to help you succeed.</p></article>
+          <article class="card-lift luxury-border rounded-[2rem] bg-card p-7 shadow-card reveal"><i data-lucide="shield" class="h-8 w-8 text-gold"></i><h3 class="mt-5 text-2xl font-semibold">Proven System</h3><p class="mt-3 text-[#a8b6cb]">Follow a battle-tested system that has helped hundreds of partners.</p></article>
+          <article class="card-lift luxury-border rounded-[2rem] bg-card p-7 shadow-card reveal"><i data-lucide="clock-3" class="h-8 w-8 text-gold"></i><h3 class="mt-5 text-2xl font-semibold">Quick Onboarding</h3><p class="mt-3 text-[#a8b6cb]">Get started in days, not weeks. We provide everything you need.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div class="section-badge inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em]">What's Included</div>
+          <h2 class="mt-6 font-display text-4xl font-bold sm:text-5xl">Everything <span class="text-gradient-gold">Included</span></h2>
+        </div>
+        <div class="mt-14 luxury-border rounded-[2rem] bg-card p-8 shadow-card sm:p-10 reveal">
+          <div class="grid gap-5 md:grid-cols-2">
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>Complete Done-For-You Fulfillment</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>Proven Marketing Scripts &amp; Templates</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>Training on How to Acquire Clients</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>Access to Our Partner Portal</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>Dedicated Partner Success Manager</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>High-Ticket Commission Structure</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>Weekly Partner Calls &amp; Support</span></div>
+            <div class="flex items-start gap-4"><span class="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-gold text-navy"><i data-lucide="check" class="h-4 w-4"></i></span><span>All Tools &amp; Resources Included</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal py-20 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div class="section-badge inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em]">Ideal Fit</div>
+          <h2 class="mt-6 font-display text-4xl font-bold sm:text-5xl">Is This Right For <span class="text-gradient-gold">You?</span></h2>
+        </div>
+        <div class="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <article class="luxury-border rounded-[2rem] bg-card p-6 reveal"><i data-lucide="zap" class="h-7 w-7 text-gold"></i><p class="mt-5 text-[#d6dde8]">Entrepreneurs looking to start a funding business</p></article>
+          <article class="luxury-border rounded-[2rem] bg-card p-6 reveal"><i data-lucide="zap" class="h-7 w-7 text-gold"></i><p class="mt-5 text-[#d6dde8]">Loan officers wanting to add revenue streams</p></article>
+          <article class="luxury-border rounded-[2rem] bg-card p-6 reveal"><i data-lucide="zap" class="h-7 w-7 text-gold"></i><p class="mt-5 text-[#d6dde8]">Real estate agents seeking passive income</p></article>
+          <article class="luxury-border rounded-[2rem] bg-card p-6 reveal"><i data-lucide="zap" class="h-7 w-7 text-gold"></i><p class="mt-5 text-[#d6dde8]">Anyone wanting to help business owners get funded</p></article>
+          <article class="luxury-border rounded-[2rem] bg-card p-6 reveal"><i data-lucide="zap" class="h-7 w-7 text-gold"></i><p class="mt-5 text-[#d6dde8]">People who want a turnkey business opportunity</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal py-20 sm:py-24">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <div class="section-badge inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em]">FAQ</div>
+          <h2 class="mt-6 font-display text-4xl font-bold sm:text-5xl">Frequently Asked <span class="text-gradient-gold">Questions</span></h2>
+        </div>
+        <div class="mt-14 grid gap-4 reveal">
+          <details class="luxury-border rounded-[2rem] bg-card p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[#d6dde8]"><span>What exactly is the Done-For-You Funding System?</span><i data-lucide="plus" class="h-5 w-5 text-gold"></i></summary><p class="mt-4 text-[#a8b6cb]">It's a complete business-in-a-box that allows you to start your own credit repair and business funding company. We handle 100% of the fulfillment, you just focus on bringing in clients using our proven marketing materials.</p></details>
+          <details class="luxury-border rounded-[2rem] bg-card p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[#d6dde8]"><span>Do I need any experience in credit repair or funding?</span><i data-lucide="plus" class="h-5 w-5 text-gold"></i></summary><p class="mt-4 text-[#a8b6cb]">No! That's the beauty of this system. We do all the work for you. You just need to follow our simple marketing system to bring in clients.</p></details>
+          <details class="luxury-border rounded-[2rem] bg-card p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[#d6dde8]"><span>How much can I earn?</span><i data-lucide="plus" class="h-5 w-5 text-gold"></i></summary><p class="mt-4 text-[#a8b6cb]">Our top partners earn $10,000+ per month. Your earnings depend on how many clients you bring in. With our high-ticket commission structure, just a few clients per month can generate substantial income.</p></details>
+          <details class="luxury-border rounded-[2rem] bg-card p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[#d6dde8]"><span>What's included?</span><i data-lucide="plus" class="h-5 w-5 text-gold"></i></summary><p class="mt-4 text-[#a8b6cb]">Everything you need to get started: complete training, marketing materials, scripts, access to our partner portal, dedicated support, and our full done-for-you fulfillment service.</p></details>
+          <details class="luxury-border rounded-[2rem] bg-card p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[#d6dde8]"><span>Is there a money-back guarantee?</span><i data-lucide="plus" class="h-5 w-5 text-gold"></i></summary><p class="mt-4 text-[#a8b6cb]">We stand behind our system. If you follow our process and don't see results, reach out to our team and we'll work with you to ensure your success.</p></details>
+          <details class="luxury-border rounded-[2rem] bg-card p-6"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-[#d6dde8]"><span>How long does it take to get started?</span><i data-lucide="plus" class="h-5 w-5 text-gold"></i></summary><p class="mt-4 text-[#a8b6cb]">You can be up and running within a few days of enrollment. We provide quick onboarding and get you access to all materials immediately after purchase.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="checkout-section" class="reveal py-20 pb-32 sm:py-24 sm:pb-24">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-gold shadow-gold"><i data-lucide="award" class="h-8 w-8 text-navy"></i></span>
+          <h2 class="mt-6 font-display text-4xl font-bold sm:text-5xl">Ready to Get <span class="text-gradient-gold">Started?</span></h2>
+        </div>
+        <div class="mt-12 rounded-[2rem] border border-gold/15 bg-card p-8 shadow-card reveal sm:p-10">
+          <form id="partner-checkout-form" class="grid gap-5 md:grid-cols-2" aria-label="Partner program checkout form">
+            <div>
+              <label for="partner-name" class="mb-2 block text-sm font-medium text-[#d6dde8]">Full Name*</label>
+              <input id="partner-name" name="partner-name" type="text" class="w-full rounded-2xl border border-white/10 bg-[#0c1830] px-4 py-3 text-[#f0ece2] outline-none transition focus:border-gold/40 focus:ring-2 focus:ring-gold/20" placeholder="Your full name" required />
+            </div>
+            <div>
+              <label for="partner-email" class="mb-2 block text-sm font-medium text-[#d6dde8]">Email*</label>
+              <input id="partner-email" name="partner-email" type="email" class="w-full rounded-2xl border border-white/10 bg-[#0c1830] px-4 py-3 text-[#f0ece2] outline-none transition focus:border-gold/40 focus:ring-2 focus:ring-gold/20" placeholder="you@example.com" required />
+            </div>
+            <div>
+              <label for="partner-phone" class="mb-2 block text-sm font-medium text-[#d6dde8]">Phone</label>
+              <input id="partner-phone" name="partner-phone" type="tel" class="w-full rounded-2xl border border-white/10 bg-[#0c1830] px-4 py-3 text-[#f0ece2] outline-none transition focus:border-gold/40 focus:ring-2 focus:ring-gold/20" placeholder="(206) 466-0419" />
+            </div>
+            <div>
+              <label for="partner-company" class="mb-2 block text-sm font-medium text-[#d6dde8]">Company Name (optional)</label>
+              <input id="partner-company" name="partner-company" type="text" class="w-full rounded-2xl border border-white/10 bg-[#0c1830] px-4 py-3 text-[#f0ece2] outline-none transition focus:border-gold/40 focus:ring-2 focus:ring-gold/20" placeholder="Your company" />
+            </div>
+            <div class="md:col-span-2">
+              <label class="flex items-start gap-3 rounded-2xl border border-white/10 bg-[#0c1830] p-4 text-sm text-[#a8b6cb]">
+                <input type="checkbox" class="mt-1 h-4 w-4 rounded border-white/20 bg-transparent text-gold focus:ring-gold/30" required />
+                <span>I agree to the <a href="terms.html" class="text-gold-light underline underline-offset-4 transition hover:text-[#f0ece2]">Terms &amp; Conditions</a> and <a href="privacy-policy.html" class="text-gold-light underline underline-offset-4 transition hover:text-[#f0ece2]">Privacy Policy</a>.</span>
+              </label>
+            </div>
+            <div class="md:col-span-2 flex flex-col items-start gap-5 lg:flex-row lg:items-center lg:justify-between">
+              <p class="text-sm text-[#7a8ba5]">Pay with Card, Affirm, Klarna, or Afterpay • Secure checkout powered by Stripe</p>
+              <button type="submit" class="rounded-full bg-gradient-gold px-8 py-4 text-sm font-semibold text-navy shadow-gold transition hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/60">Proceed to Checkout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="fixed inset-x-0 bottom-0 z-40 border-t border-gold/15 bg-[#08111f]/95 p-4 backdrop-blur lg:hidden">
+    <a href="#checkout-section" class="block rounded-full bg-gradient-gold px-6 py-3 text-center text-sm font-semibold text-navy shadow-gold">Become a Partner</a>
+  </div>
+
+  <footer class="border-t border-white/5 bg-[#08111f] reveal">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div>
+          <a href="index.html#home" class="flex items-center gap-2">
+            <img src="logo-transparent.png" alt="Covenant Capital" class="h-16 w-auto" />
+          </a>
+          <p class="mt-5 max-w-md text-[#a8b6cb]">Covenant Capital helps businesses access premium funding solutions and empowers partners to launch their own funding company with confidence.</p>
+          <div class="mt-6 space-y-2 text-sm text-[#d6dde8]">
+            <a href="mailto:sthfinancialllc@gmail.com" class="block transition hover:text-gold-light">sthfinancialllc@gmail.com</a>
+            <a href="tel:+12064660419" class="block transition hover:text-gold-light">(206) 466-0419</a>
+            <div>United States</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-[0.25em] text-gold-light">Funding Products</h3>
+          <ul class="mt-5 space-y-3 text-[#a8b6cb]">
+            <li><a href="index.html#products" class="transition hover:text-[#f0ece2]">Business Line of Credit</a></li>
+            <li><a href="index.html#products" class="transition hover:text-[#f0ece2]">0% Strategic Financing</a></li>
+            <li><a href="index.html#products" class="transition hover:text-[#f0ece2]">SBA Loans</a></li>
+            <li><a href="index.html#products" class="transition hover:text-[#f0ece2]">Equipment Financing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-[0.25em] text-gold-light">Company</h3>
+          <ul class="mt-5 space-y-3 text-[#a8b6cb]">
+            <li><a href="index.html#home" class="transition hover:text-[#f0ece2]">Home</a></li>
+            <li><a href="index.html#industries" class="transition hover:text-[#f0ece2]">Industries</a></li>
+            <li><a href="index.html#partners" class="transition hover:text-[#f0ece2]">Partner Program</a></li>
+            <li><a href="index.html#success-stories" class="transition hover:text-[#f0ece2]">Success Stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-[0.25em] text-gold-light">Resources</h3>
+          <ul class="mt-5 space-y-3 text-[#a8b6cb]">
+            <li><a href="index.html#apply" class="transition hover:text-[#f0ece2]">Apply Now</a></li>
+            <li><a href="partner.html" class="transition hover:text-[#f0ece2]">Become a Partner</a></li>
+            <li><a href="privacy-policy.html" class="transition hover:text-[#f0ece2]">Privacy Policy</a></li>
+            <li><a href="terms.html" class="transition hover:text-[#f0ece2]">Terms &amp; Conditions</a></li>
+            <li><a href="mailto:sthfinancialllc@gmail.com" class="transition hover:text-[#f0ece2]">Contact Us</a></li>
+            <li><span>Founder: Seung Hong</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col gap-4 border-t border-white/5 pt-8 text-sm text-[#7a8ba5] sm:flex-row sm:items-center sm:justify-between">
+        <div>© <span id="year"></span> STH Financial LLC. All rights reserved.</div>
+        <div>Your Guides From Start to Funded</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (!targetId || targetId === '#') return;
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const form = document.getElementById('partner-checkout-form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      alert('Application received! Our team will reach out within 24 hours to get you started.');
+      window.location.href = 'partner-thank-you.html';
+    });
+  </script>
+</body>
+</html>
